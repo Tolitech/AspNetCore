@@ -17,6 +17,8 @@
     <PackageTags>aspnetcore</PackageTags>
     <PackageReleaseNotes>More information at http://www.tolitech.com.br</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+	<IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
