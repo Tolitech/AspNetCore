@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tolitech.CodeGenerator.AspNetCore", "AspNetCore\Tolitech.CodeGenerator.AspNetCore.csproj", "{06BB728B-855A-45A5-A4E1-EB896AD093EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tolitech.CodeGenerator.AspNetCore.Tests", "AspNetCore.Tests\Tolitech.CodeGenerator.AspNetCore.Tests.csproj", "{6FC53940-EA00-4F02-9B43-A39C56A71AB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06BB728B-855A-45A5-A4E1-EB896AD093EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BB728B-855A-45A5-A4E1-EB896AD093EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BB728B-855A-45A5-A4E1-EB896AD093EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BB728B-855A-45A5-A4E1-EB896AD093EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC53940-EA00-4F02-9B43-A39C56A71AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC53940-EA00-4F02-9B43-A39C56A71AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC53940-EA00-4F02-9B43-A39C56A71AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC53940-EA00-4F02-9B43-A39C56A71AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {509487ED-0FCD-4FAF-AA1B-1646F8C44316}
+	EndGlobalSection
+EndGlobal
