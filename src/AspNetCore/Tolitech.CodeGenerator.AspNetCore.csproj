@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Tolitech.CodeGenerator.Domain" Version="1.0.3-alpha-4" />
+    <PackageReference Include="Tolitech.CodeGenerator.Domain" Version="1.0.3-beta-1" />
     <PackageReference Include="Tolitech.CodeGenerator.Notification" Version="1.0.0-alpha-1" />
     <PackageReference Include="Tolitech.CodeGenerator.Pagination" Version="1.0.0-alpha-2" />
   </ItemGroup>
