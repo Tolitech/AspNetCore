@@ -15,7 +15,7 @@ namespace Tolitech.CodeGenerator.AspNetCore.Controllers
     {
         #region Security
 
-        protected string? UserId
+        protected Guid? UserId
         {
             get
             {
@@ -24,7 +24,7 @@ namespace Tolitech.CodeGenerator.AspNetCore.Controllers
                 if (claim == null)
                     return null;
 
-                return claim.Value;
+                return new Guid(claim.Value);
             }
         }
 
@@ -45,7 +45,7 @@ namespace Tolitech.CodeGenerator.AspNetCore.Controllers
         {
             get
             {
-                return !string.IsNullOrEmpty(UserId);
+                return UserId.HasValue;
             }
         }
 
@@ -147,8 +147,11 @@ namespace Tolitech.CodeGenerator.AspNetCore.Controllers
         {
             if (Activity.Current != null)
             {
-                Activity.Current.AddTag("UserId", UserId);
-                Activity.Current.AddTag("Username", Username);
+                if (UserId.HasValue)
+                {
+                    Activity.Current.AddTag("UserId", UserId.ToString());
+                    Activity.Current.AddTag("Username", Username);
+                }
             }
         }
 

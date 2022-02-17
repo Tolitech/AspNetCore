@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0-alpha-1</Version>
+    <Version>1.0.0-alpha-4</Version>
     <Authors>Tolitech</Authors>
     <Description>AspNetCore library for Tolitech Code Generator.</Description>
     <PackageProjectUrl>https://www.tolitech.com.br</PackageProjectUrl>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Tolitech.CodeGenerator.Domain" Version="1.0.3-alpha-4" />
+    <PackageReference Include="Tolitech.CodeGenerator.Domain" Version="1.0.3-beta-1" />
     <PackageReference Include="Tolitech.CodeGenerator.Notification" Version="1.0.0-alpha-1" />
     <PackageReference Include="Tolitech.CodeGenerator.Pagination" Version="1.0.0-alpha-2" />
   </ItemGroup>
