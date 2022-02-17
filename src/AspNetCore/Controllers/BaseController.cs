@@ -147,8 +147,11 @@ namespace Tolitech.CodeGenerator.AspNetCore.Controllers
         {
             if (Activity.Current != null)
             {
-                Activity.Current.AddTag("UserId", UserId);
-                Activity.Current.AddTag("Username", Username);
+                if (UserId.HasValue)
+                {
+                    Activity.Current.AddTag("UserId", UserId.ToString());
+                    Activity.Current.AddTag("Username", Username);
+                }
             }
         }
 
