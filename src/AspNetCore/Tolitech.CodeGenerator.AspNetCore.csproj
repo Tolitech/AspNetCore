@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0-alpha-4</Version>
+    <Version>1.0.0-alpha-5</Version>
     <Authors>Tolitech</Authors>
     <Description>AspNetCore library for Tolitech Code Generator.</Description>
     <PackageProjectUrl>https://www.tolitech.com.br</PackageProjectUrl>

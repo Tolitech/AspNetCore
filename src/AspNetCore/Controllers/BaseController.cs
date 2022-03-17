@@ -101,8 +101,19 @@ namespace Tolitech.CodeGenerator.AspNetCore.Controllers
             {
                 var paginationHeader = new Paginated<T>(items, maxPages);
                 HttpContext.Response.Headers.Add("Access-Control-Expose-Headers", "X-Pagination");
-                HttpContext.Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationHeader));
+                HttpContext.Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationHeader, GetJsonSerializerOptions()));
             }
+        }
+
+        private static JsonSerializerOptions GetJsonSerializerOptions()
+        {
+            JsonSerializerOptions options = new(JsonSerializerDefaults.Web)
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+            };
+
+            return options;
         }
 
         #endregion
